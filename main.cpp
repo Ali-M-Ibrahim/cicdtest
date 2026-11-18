@@ -1,6 +1,6 @@
 #include <iostream>
 
 int main() {
-    std::cout << 4 + 3 << '\n';
+    std::cout << 4 + 43 << '\n';
     return 0;
 }
