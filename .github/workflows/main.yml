@@ -16,9 +16,3 @@ jobs:
         run: g++ -std=c++17 -Wall -Wextra main.cpp -o calculator
       - name: Test the program
         run: test "$(./calculator)" = "5"
-      - name: Upload the executable
-        if: github.event_name == 'push'
-        uses: actions/upload-artifact@v4
-        with:
-          name: calculator-linux
-          path: calculator
